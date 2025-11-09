@@ -16,7 +16,7 @@
 					"Easy Effects Sink"
 				],
 			},
-			"scroll-step": 5.0,
+			"scroll-step": 2.0,
 			"smooth-scrolling-threshold": 1,
 			"on-click": "pavucontrol -t 3",
 		},
@@ -26,10 +26,6 @@
         	"on-click" : "wlogout",
         },
         	
-
-
-
-
        "hyprland/workspaces": {
            "format": "{icon}",
            "format-icons": {
@@ -38,7 +34,8 @@
                "empty": ""
            },
            "persistent-workspaces": {
-               "*": [ 1,2,3,4,5 ]
+               "HDMI-A-1": [ 1,2,3],
+               "DP-2": [ 4,5,6]
            }
        },
 

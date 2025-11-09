@@ -22,6 +22,7 @@ by Stephan Raabe (2023)
 * {
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	background-image: none;
+	background-color: transparent;
 	transition: 20ms;
 	box-shadow: none;
 }
