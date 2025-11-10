@@ -2,12 +2,9 @@ format = """
 [](#9A348E)\
 $os\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](bg:#DA627D fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
-$git_branch\
-$git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](fg:#DA627D bg:#33658A)\
 $c\
 $elixir\
 $elm\
@@ -20,12 +17,17 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#86BBD8 bg:#06969A)\
-$docker_context\
-[](fg:#06969A bg:#33658A)\
 $time\
-[ ](fg:#33658A)\
+[ ](fg:#33658A)\
 """
+
+# $git_branch\
+# $git_status\
+# [](fg:#FCA17D bg:#86BBD8)\
+
+# [](fg:#86BBD8 bg:#06969A)\
+# $docker_context\
+# [](fg:#06969A bg:#33658A)\
 
 # Disable the blank line at the start of the prompt
 # add_newline = false
@@ -93,6 +95,7 @@ format = '[ $symbol ($version) ]($style)'
 symbol = ""
 style = "bg:#FCA17D"
 format = '[ $symbol $branch ]($style)'
+disabled = true
 
 [git_status]
 style = "bg:#FCA17D"
