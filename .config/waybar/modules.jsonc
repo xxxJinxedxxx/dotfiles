@@ -1,0 +1,60 @@
+{
+  "hyprland/workspaces": {
+    "tooltip": false,
+    "active-only": true,
+    "show-special": false,
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": "",
+    },
+    "persistent-workspaces": {
+      "*": 5,
+    },
+  },
+  "clock": {
+    "format": "{:%H:%M:%S} ",
+    "interval": 1,
+    "tooltip-format": "{calendar}",
+    "calendar": {
+      "format": {
+        "today": "<b>{}</b>",
+      },
+    },
+    "actions": {
+      "on-click-right": "shift_down",
+      "on-click": "shift_up",
+    },
+  },
+
+  "custom/pacman": {
+    "format": "󰅢 {}",
+    "interval": 30,
+    "exec": "checkupdates | wc -l",
+    "exec-if": "exit 0",
+    "on-click": "kitty sh -c 'yay -Syu --noconfirm; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
+    "signal": 8,
+    "tooltip": false,
+  },
+  "pulseaudio": {
+    "format": "{icon}{volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [" ", " ", " "],
+    },
+    "on-click": "pavucontrol",
+    "scroll-step": 2,
+  },
+
+  "custom/power-menu": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/hypr/scripts/wlogout.sh",
+  },
+  "custom/arch": {
+    "format": "<span font='28px'>󰣇</span>",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/sidelauncher",
+  },
+}

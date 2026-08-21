@@ -1,0 +1,81 @@
+@import "matugen-waybar.css";
+
+* {
+  font-family: "Cartograph CF";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+window#waybar {
+  background-color: alpha(@surface, 0.75);
+  color: @on_surface;
+}
+
+#workspaces button {
+  all: unset;
+  padding: 0px 5px;
+  color: alpha(@primary, 0.7);
+  transition: all 0.2s ease;
+}
+#workspaces button:hover {
+  color: @on_secondary;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+#workspaces button.active {
+  color: @primary;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+#workspaces button.empty {
+  color: alpha(@primary, 0.4);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+}
+#workspaces button.empty:hover {
+  color: @on_secondary;
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+#workspaces button.empty.active {
+  color: @primary;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#custom-arch {
+  color: @primary;
+  padding: 0 16px 0 16px;
+}
+
+#pulseaudio {
+  padding: 0 20px;
+  margin: 6px 0px 6px 0px;
+  color: @primary;
+}
+
+#clock,
+#custom-pacman {
+  color: @primary;
+}
+
+#custom-power-menu {
+  color: @primary;
+  padding: 0 18px 0 6px;
+}
+
+tooltip {
+  border: 2px solid @primary;
+  border-radius: 12px;
+  background-color: @surface;
+  color: @on_surface;
+}
+
+tooltip label {
+  padding: 5px;
+}
+
+label:focus {
+  background-color: @background;
+}

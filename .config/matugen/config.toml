@@ -1,0 +1,33 @@
+[config]
+
+# Hyprland
+[templates.hyprland]
+input_path =  '~/.config/matugen/templates/matugen-hyprland.lua'
+output_path = '~/.config/hypr/hyprd/colors.lua'
+post_hook =   'hyprctl reload'
+
+# Starship
+[templates.starship]
+input_path = '~/.config/matugen/templates/matugen-starship.toml'
+output_path = '~/.config/starship.toml'
+
+# Waybar
+[templates.waybar]
+input_path = '~/.config/matugen/templates/matugen-waybar-wofi.css'
+output_path = '~/.config/waybar/matugen-waybar.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+# Yazi
+[templates.yazi]
+input_path = '~/.config/matugen/templates/matugen-yazi.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+# Rofi
+[templates.rofi]
+input_path = '~/.config/matugen/templates/matugen-rofi.rasi'
+output_path = '~/.config/rofi/matugen-rofi.rasi'
+
+# Wofi
+[templates.wofi]
+input_path = '~/.config/matugen/templates/matugen-waybar-wofi.css'
+output_path = '~/.config/wofi/colors.css'
