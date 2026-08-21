@@ -14,13 +14,14 @@ fastfetch
 alias .="cd ~/.config"
 alias m=micro
 alias e=vim
-alias install="sudo pacman -S"
+alias pacman="sudo pacman -S"
+alias remove="sudo pacman -S"
 alias del="rm -rf"
 alias yt="yt-x --preview"
 alias off="sudo poweroff"
 alias ssh="kitty +kitten ssh"
-alias j="kitty +kitten ssh cedric@192.168.1.24"
-
+alias serv="kitty +kitten ssh cedric@192.168.1.24"
+alias lazy="lazygit"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
