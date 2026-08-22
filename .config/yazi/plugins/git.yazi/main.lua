@@ -162,16 +162,17 @@ local function setup(st, opts)
 	opts.order = opts.order or 1500
 
 	local t = th.git or {}
-	local styles = {
-		[CODES.unknown] = t.unknown or ui.Style(),
-		[CODES.ignored] = t.ignored or ui.Style():fg("darkgray"),
-		[CODES.untracked] = t.untracked or ui.Style():fg("magenta"),
-		[CODES.modified] = t.modified or ui.Style():fg("yellow"),
-		[CODES.added] = t.added or ui.Style():fg("green"),
-		[CODES.deleted] = t.deleted or ui.Style():fg("red"),
-		[CODES.updated] = t.updated or ui.Style():fg("yellow"),
-		[CODES.clean] = t.clean or ui.Style(),
-	}
+
+local styles = {
+	[CODES.unknown] = t.unknown,
+	[CODES.ignored] = t.ignored,
+	[CODES.untracked] = t.untracked,
+	[CODES.modified] = t.modified,
+	[CODES.added] = t.added,
+	[CODES.deleted] = t.deleted,
+	[CODES.updated] = t.updated,
+	[CODES.clean] = t.clean 
+}
 	local signs = {
 		[CODES.unknown] = t.unknown_sign or "",
 		[CODES.ignored] = t.ignored_sign or " ",
@@ -180,7 +181,7 @@ local function setup(st, opts)
 		[CODES.added] = t.added_sign or " ",
 		[CODES.deleted] = t.deleted_sign or " ",
 		[CODES.updated] = t.updated_sign or " ",
-		[CODES.clean] = t.clean_sign or "",
+		[CODES.clean] = t.clean_sign or " ",
 	}
 
 	Linemode:children_add(function(self)
