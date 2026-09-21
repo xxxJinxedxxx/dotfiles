@@ -23,18 +23,19 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 
-hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
-hl.bind(mainMod .. " + Y", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/wallpaper_change.sh --new"))
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/wallpaper_change.sh --old"))
+hl.bind(mainMod .. " + Return",           hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + Y",                hl.dsp.exec_cmd("kitty yazi"))
+hl.bind(mainMod .. " + SHIFT + Y",        hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + B",                hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/wallpaper_change.sh --new"))
+hl.bind(mainMod .. " + SHIFT + B",        hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/wallpaper_change.sh --old"))
 hl.bind(mainMod .. " + SHIFT + CTRL + B", hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/wallpaper_change.sh --del"))
-hl.bind(mainMod .. " + X", hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/toggle_waybar.sh"))
+hl.bind(mainMod .. " + X",                hl.dsp.exec_cmd("/home/archi/.config/hypr/scripts/toggle_waybar.sh"))
 
 -- Focus
-hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
 local keys = { "Q", "W", "E", "R", "T" }
 
@@ -50,8 +51,13 @@ hl.bind(mainMod .. " + D", hl.dsp.focus({ monitor = "DP-2" }))
 
 -- Move Windows to monitor
 hl.bind(mainMod .. " + SHIFT + A", hl.dsp.window.move({ monitor = "HDMI-A-1" }))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ monitor = "DP-2" }))
-hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ monitor = "DP-1" }))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ monitor = "DP-3" }))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ monitor = "DP-2" }))
+
+-- Move Windows left / right
+hl.bind(mainMod .. " + SHIFT + left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
+
 
 -- Mouse wheel
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))

@@ -28,6 +28,7 @@ Downloads/
 .config/dolphinrc
 .config/mimeapps.list
 .config/pavucontrol.ini
+.config/starship.toml
 .wallpaper/wall_history_back.txt
 .wallpaper/wall_history_front.txt
 

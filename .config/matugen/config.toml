@@ -26,3 +26,8 @@ output_path = '~/.config/yazi/theme.toml'
 [templates.wofi]
 input_path = '~/.config/matugen/templates/matugen-waybar-wofi.css'
 output_path = '~/.config/wofi/colors.css'
+
+# Ytm-player
+[templates.ytm-player]
+input_path = '~/.config/matugen/templates/matugen-ytm-player.toml'
+output_path = '~/.config/ytm-player/theme.toml'

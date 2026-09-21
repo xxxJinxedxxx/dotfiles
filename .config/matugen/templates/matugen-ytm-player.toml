@@ -1,0 +1,10 @@
+[colors]
+playback_bar_bg = "{{colors.surface.default.hex}}"
+selected_item = "{{colors.surface.default.hex}}"
+progress_filled = "{{colors.primary.default.hex}}"
+progress_empty = "{{colors.surface_variant.default.hex}}"
+lyrics_played = "{{colors.outline.default.hex}}"
+lyrics_current = "{{colors.primary.default.hex}}"
+lyrics_upcoming = "{{colors.on_surface_variant.default.hex}}"
+active_tab = "{{colors.on_surface.default.hex}}"
+inactive_tab = "{{colors.outline.default.hex}}"
